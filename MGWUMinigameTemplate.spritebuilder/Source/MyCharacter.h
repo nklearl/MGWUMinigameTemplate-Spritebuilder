@@ -10,5 +10,7 @@
 @interface MyCharacter : MGWUCharacter
 
 -(void)jump;
+-(void)moveLeft;
+-(void)moveRight;
 
 @end

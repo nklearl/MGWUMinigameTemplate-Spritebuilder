@@ -98,4 +98,18 @@
     self.physicsBody.velocity = ccp(0,122);
 }
 
+-(void)moveLeft{
+    if (self.positionInPoints.y<=50) {
+        [self.animationManager runAnimationsForSequenceNamed:@"AnimSideWalking"];
+        self.physicsBody.velocity = ccp(-100, 0);
+    }
+}
+
+-(void)moveRight{
+    if (self.positionInPoints.y<=50) {
+        [self.animationManager runAnimationsForSequenceNamed:@"AnimSideWalking"];
+        self.physicsBody.velocity = ccp(100, 0);
+    }
+}
+
 @end

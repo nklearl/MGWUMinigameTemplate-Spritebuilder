@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AC0AB5D1984C083007F91D0 /* MyCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0AB5C1984C083007F91D0 /* MyCoin.m */; };
 		65400FAB19743FE200EDBBED /* MGWUMinigameInstructions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65400FAA19743FE200EDBBED /* MGWUMinigameInstructions.m */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -61,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AC0AB5B1984C083007F91D0 /* MyCoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCoin.h; sourceTree = "<group>"; };
+		0AC0AB5C1984C083007F91D0 /* MyCoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCoin.m; sourceTree = "<group>"; };
 		65400FA919743FE200EDBBED /* MGWUMinigameInstructions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGWUMinigameInstructions.h; path = Source/MGWUMinigameInstructions.h; sourceTree = "<group>"; };
 		65400FAA19743FE200EDBBED /* MGWUMinigameInstructions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGWUMinigameInstructions.m; path = Source/MGWUMinigameInstructions.m; sourceTree = "<group>"; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				ED5FF05B19495F2F00571E13 /* MyCharacter.m */,
 				ED03BBE51942587100E23822 /* MyMinigame.h */,
 				ED03BBE61942587100E23822 /* MyMinigame.m */,
+				0AC0AB5B1984C083007F91D0 /* MyCoin.h */,
+				0AC0AB5C1984C083007F91D0 /* MyCoin.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				ED03BBE71942587100E23822 /* MyMinigame.m in Sources */,
 				ED03BBE41942563A00E23822 /* MGWUTestGame.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				0AC0AB5D1984C083007F91D0 /* MyCoin.m in Sources */,
 				ED5FF05C19495F2F00571E13 /* MyCharacter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
