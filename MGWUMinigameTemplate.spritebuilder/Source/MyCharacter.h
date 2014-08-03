@@ -12,5 +12,6 @@
 -(void)jump;
 -(void)moveLeft;
 -(void)moveRight;
+-(void) moveCharacter:(int)xVal;
 
 @end

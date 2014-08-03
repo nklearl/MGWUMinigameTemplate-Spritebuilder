@@ -2,7 +2,7 @@
 //  MyCoin.h
 //  MGWUMinigameTemplate
 //
-//  Created by K on 7/27/14.
+//  Created by Kinlam Ng on 7/27/14.
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
@@ -10,7 +10,6 @@
 
 @interface MyCoin : CCSprite
 
-@property (nonatomic, readwrite, assign) float scaleX;
-@property (nonatomic, readwrite, assign) float scaleY;
+@property (nonatomic, assign) int coinType;
 
 @end

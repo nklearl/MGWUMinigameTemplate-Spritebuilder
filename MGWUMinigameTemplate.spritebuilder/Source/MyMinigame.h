@@ -10,12 +10,12 @@
 #import "MGWUMinigame.h"
 #import "MyCharacter.h"
 
-@interface MyMinigame : MGWUMinigame
+@interface MyMinigame : MGWUMinigame <CCPhysicsCollisionDelegate>
 
 // DO NOT DELETE!
 @property (nonatomic,retain) MyCharacter *hero;
 // DO NOT DELETE!
 
--(void) moveCharacter:(int)xVal;
+-(void) endMinigame;
 
 @end

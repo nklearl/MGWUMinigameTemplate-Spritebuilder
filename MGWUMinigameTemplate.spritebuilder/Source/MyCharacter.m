@@ -29,6 +29,7 @@
 
 -(void)didLoadFromCCB {
     // Set up anything connected to Sprite Builder here
+    self.physicsBody.collisionType = @"hero";
 }
 
 -(void)onEnter {
@@ -42,7 +43,7 @@
     // delta will tell you how much time has passed since the last cycle (in seconds)
     
     // This sample method is called every update to handle character animation
-    [self updateAnimations:delta];
+    //[self updateAnimations:delta];
 }
 
 -(void)updateAnimations:(CCTime)delta {
@@ -95,20 +96,28 @@
 // This method tells the character to jump by giving it an upward velocity.
 // It's been added to a physics node in the main scene, like the penguins Peeved Penguins, so it will fall automatically!
 -(void)jump {
-    self.physicsBody.velocity = ccp(0,122);
+    self.physicsBody.velocity = ccp(0,100);
 }
 
 -(void)moveLeft{
-    if (self.positionInPoints.y<=50) {
+    if (_isIdling) {
         [self.animationManager runAnimationsForSequenceNamed:@"AnimSideWalking"];
         self.physicsBody.velocity = ccp(-100, 0);
     }
 }
 
 -(void)moveRight{
-    if (self.positionInPoints.y<=50) {
+    if (_isIdling) {
         [self.animationManager runAnimationsForSequenceNamed:@"AnimSideWalking"];
         self.physicsBody.velocity = ccp(100, 0);
+    }
+}
+
+-(void) moveCharacter:(int)xVal{
+    if (xVal<(int)self.positionInPoints.x) {
+        [self moveLeft];
+    } else if (xVal>(int)self.positionInPoints.x){
+        [self moveRight];
     }
 }
 
